@@ -33,10 +33,10 @@ for record_number in record_numbers:
     print("rex")
 
     # det = pa.detection.learning_entropy(w, m=150, order=2, alpha=[8., 9., 10., 11., 12., 13.])
-    # det = pa.detection.ELBND(w, e, function="sum")
-    det = pa.detection.ESE(w)
+    det = pa.detection.ELBND(w, e, function="sum")
+    # det = pa.detection.ESE(w)
 
-    file = open(f"ese_{record_number}.dat", "wb")
+    file = open(f"elbnd_{record_number}.dat", "wb")
     pickle.dump(det, file)
     file.close()
     # ploting
