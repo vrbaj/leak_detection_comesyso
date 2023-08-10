@@ -14,5 +14,5 @@ for method in nd_methods:
         plt.plot(ese_data)
         plt.xlabel("$k$ [-]")
         plt.ylabel(f"${method.upper()}$ [-]")
-        plt.title(f"Experiment {idx + 1}")
+        plt.title(f"{method.upper()} experiment {idx + 1}")
 plt.show()
